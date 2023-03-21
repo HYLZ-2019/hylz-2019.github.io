@@ -1,12 +1,7 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - HYLZ-2019
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - HYLZ-2019/ReadingMap
+  - HYLZ-2019/FriendsOfFriends
+  - HYLZ-2019/EFS
