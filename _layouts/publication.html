@@ -38,15 +38,15 @@ layout: default
     <div>{{ page.authors }}</div>
   {%- endif -%} 
   {%- if page.code -%}
-    <a class="link-button" src="{{page.code}}"> Code </a>
+    <a class="link-button" href="{{page.code}}"> Code </a>
   {%- endif -%}
   {%- if page.pdf -%}
-    <a class="link-button" src="{{page.pdf}}"> PDF </a>
+    <a class="link-button" href="{{page.pdf}}"> PDF </a>
   {%- endif -%}
   </div>
 
   <br>
-  
+
   <article class="post-content">
     {{ content }}
   </article>

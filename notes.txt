@@ -2,4 +2,5 @@ run server:
 bundle exec jekyll server
 
 deploy:
+(use git bash)
 bin/deploy --user
