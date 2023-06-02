@@ -1,0 +1,67 @@
+---
+layout: default
+---
+<!-- _layouts/post.html -->
+{%- assign year = page.date | date: "%Y" -%}
+{%- assign tags = page.tags | join: "" -%}
+{%- assign categories = page.categories | join: "" -%}
+
+{% if page._styles %}
+<!-- Page/Post style -->
+<style type="text/css">
+  {{ page._styles }}
+</style>
+{% endif %}
+
+<style type="text/css">
+  .link-button{
+    display: block;
+    width: 4em;
+    border-radius: 5px;
+    border: 1px solid var(--global-theme-color);
+    text-align: center;
+    background-color: var(--global-light-blue);
+    margin-left: 1em;
+  }
+</style>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <br>
+
+  <div style="display:flex;flex-direction:row;justify-content:left;align-items:center;">
+  {%- if page.authors -%}
+    <div>{{ page.authors }}</div>
+  {%- endif -%} 
+  {%- if page.code -%}
+    <a class="link-button" src="{{page.code}}"> Code </a>
+  {%- endif -%}
+  {%- if page.pdf -%}
+    <a class="link-button" src="{{page.pdf}}"> PDF </a>
+  {%- endif -%}
+  </div>
+
+  <br>
+  
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {%- if site.related_blog_posts.enabled -%}
+    {%- if page.related_posts == null or page.related_posts -%}
+      {% include related_posts.html %}
+    {%- endif %}
+  {%- endif %}
+
+  {%- if site.disqus_shortname and page.disqus_comments -%}
+    {% include disqus.html %}
+  {%- endif %}
+  {%- if site.giscus.repo and page.giscus_comments -%}
+    {% include giscus.html %}
+  {%- endif -%}
+
+</div>

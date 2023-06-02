@@ -6,8 +6,12 @@
   author={Lou, Hanyue and Teng, Minggui and Yang, Yixin and Shi, Boxin},
   booktitle={Proc. of Conference on Computer Vision and Pattern Recognition},
   year={2023},
-  preview={comingsoon.png},
-  selected={true}
+  preview={efs-thumbnail.png},
+  selected={true},
+  abstract={Traditional focal stack methods require multiple shots to capture images focused at different distances of the same scene, which cannot be applied to dynamic scenes well. Generating a high-quality all-in-focus image from a single shot is challenging, due to the highly ill-posed nature of the single-image defocus and deblurring problem. In this thesis, to restore an all-in-focus image, we propose the event focal stack which is defined as event streams captured during a continuous focal sweep. Given an RGB image focused at an arbitrary distance, we explore the high temporal resolution of event streams, from which we automatically select refocusing timestamps and reconstruct corresponding refocused images with events to form a focal stack. Guided by the neighbouring events around the selected timestamps, we can merge the focal stack with proper weights and restore a sharp all-in-focus image. Experimental results on both synthetic and real datasets show superior performance over state-of-the-art methods. },
+  url={https://hylz-2019.github.io/EFS},
+  pdf={https://ci.idm.pku.edu.cn/Lou_CVPR23b.pdf},
+  code={https://github.com/HYLZ-2019/EFS},
 }
 
 @inproceedings{teng2022nest,
@@ -17,6 +21,10 @@
   pages={660--676},
   year = {2022},
   organization={Springer},
-  preview={comingsoon.png},
-  selected={true}
+  preview={nest-thumbnail.png},
+  selected={true},
+  abstract={Event cameras demonstrate unique characteristics such as high temporal resolution, low latency, and high dynamic range to improve performance for various image enhancement tasks. However, event streams cannot be applied to neural networks directly due to their sparse nature. To integrate events into traditional computer vision algorithms, an appropriate event representation is desirable, while existing voxel grid and event stack representations are less effective in encoding motion and temporal information. This paper presents a novel event representation named Neural Event STack (NEST), which satisfies physical constraints and encodes comprehensive motion and temporal information sufficient for image enhancement. We apply our representation on multiple tasks, which achieves superior performance on image deblurring and image super-resolution than state-of-the-art methods on both synthetic and real datasets. And we further demonstrate the possibility to generate high frame rate videos with our novel event representation.},
+  url={https://tengminggui.cn/publication/eccv22/},
+  pdf={https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660649.pdf},
+  code={https://github.com/ChipsAhoyM/NEST},
 }
