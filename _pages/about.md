@@ -13,4 +13,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an undergraduate student majoring in computer science in Peking University. Currently I am alive.
+I am a PhD candidate student majoring in computer science in Peking University. Currently I am alive.
