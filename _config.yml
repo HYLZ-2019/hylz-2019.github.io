@@ -213,6 +213,9 @@ defaults:
 
 jekyll-minifier:
   exclude: ['robots.txt']
+  compress_css: false
+  compress_javascript: false
+  compress_json: false
   uglifier_args:
     harmony: true
 
