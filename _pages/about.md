@@ -14,3 +14,6 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 I am a PhD candidate student majoring in computer science in Peking University. Currently I am alive.
+
+I am expected to graduate in June 2028. My latest resume (last updated: 2024-12-09): [https://github.com/HYLZ-2019/hylz-2019.github.io/blob/master/assets/pdf/HanyueLou_20241209_chinese.pdf](Chinese) / [https://github.com/HYLZ-2019/hylz-2019.github.io/blob/master/assets/pdf/HanyueLou_20241209_english.pdf](English). Contact me if you have a matching job position!
+
